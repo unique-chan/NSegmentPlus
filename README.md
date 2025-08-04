@@ -65,11 +65,11 @@ class NoisySegmentPlus:
 
         # [Step 3] Scale-aware deformation suppression
         mask_ignore = np.zeros(shape, dtype=bool)
-        unique_labels = np.unique(image)
+        unique_labels = np.unique(segment)
         for class_id in unique_labels:
             if class_id == -1:
                 continue
-            class_mask = (image == class_id).astype(np.uint8)
+            class_mask = (segment == class_id).astype(np.uint8)
             num_labels, labels = cv2.connectedComponents(class_mask)
             for comp_id in range(1, num_labels):
                 comp_mask = (labels == comp_id).astype(np.uint8)
