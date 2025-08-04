@@ -39,9 +39,9 @@ class NoisySegmentPlus:
         if not alpha_sigma_list:
             alpha_sigma_list = [(alpha, sigma) for alpha in [1, 15, 30, 50, 100] 
                                  for sigma in [3, 5, 10]]
-        self.alpha_sigma_list = alpha_sigma_list
-        self.prob = prob
-        self.area_thresh = area_thresh
+        self.alpha_sigma_list = alpha_sigma_list # (Ω)
+        self.prob = prob # Transform probability (p)
+        self.area_thresh = area_thresh # Mask deformation suppression threshold (θ)
 
     def __call__(self, results):
         if np.random.rand() > self.prob:
