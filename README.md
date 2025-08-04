@@ -110,11 +110,11 @@ class NoisySegmentPlus:
   ~~~
 * For better training, you might adjust various $(\alpha, \sigma)$ parameter pairs via `alpha_sigma_list` as follows:
   ~~~python3
-  dict(type='NoisySegment', alpha_sigma_list=[(1, 3), (1, 5) ...])
+  dict(type='NoisySegmentPlus', alpha_sigma_list=[(1, 3), (1, 5) ...])
   ~~~
 * If you want our method be applied with a prob of 80%? (Note: default prob = 0.5)
   ~~~python3
-  dict(type='NoisySegment', alpha_sigma_list=[(1, 3), (1, 5) ...], prob=0.8)
+  dict(type='NoisySegmentPlus', alpha_sigma_list=[(1, 3), (1, 5) ...], prob=0.8)
   ~~~
 
 ### Preliminaries:
