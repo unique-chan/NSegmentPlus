@@ -23,7 +23,9 @@
 
 ### Overview:
 - With our strategy, you can boost the performance of 2D semantic segmentation.
-
+<p align="center">
+    <img alt="Welcome" src="overview.png" />
+</p>
 
 ### Our algorithm in Python3 (with OpenCV, Numpy, and MMSegmentation)
 ~~~python3
