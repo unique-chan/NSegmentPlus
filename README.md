@@ -20,6 +20,7 @@
 
 ### Announcement:
 - Aug. 2025: We have released the official code of our proposed approach!
+- Jul. 2025: Our previous pilot work, **_NSegment_**, is available at [here](https://github.com/unique-chan/NSegment)!
 
 ### Overview:
 - With our strategy, you can boost the performance of 2D semantic segmentation.
