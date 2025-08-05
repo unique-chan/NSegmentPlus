@@ -54,16 +54,16 @@ class NoisySegmentPlus:
     def transform(self, segment, random_state=None):
         if random_state is None:
             random_state = np.random.RandomState(None)
-        # [Step 1] Generate random displacement fields
+        # [Step 1️⃣] Generate random displacement fields 
         shape = segment.shape[:2]
         dx = 2 * random_state.rand(*shape) - 1
         dy = 2 * random_state.rand(*shape) - 1
 
-        # [Step 2] Apply stochastic Gaussian smoothing
+        # [Step 2️⃣] Apply stochastic Gaussian smoothing
         alpha, sigma = self.alpha_sigma_list[random_state.randint(0, len(self.alpha_sigma_list))]
         dx, dy = alpha * dx, alpha * dy
 
-        # [Step 3] Scale-aware deformation suppression
+        # [Step 3️⃣] Scale-aware deformation suppression
         mask_ignore = np.zeros(shape, dtype=bool)
         unique_labels = np.unique(segment)
         for class_id in unique_labels:
@@ -89,7 +89,7 @@ class NoisySegmentPlus:
         dx = cv2.GaussianBlur(dx, (0, 0), sigma)
         dy = cv2.GaussianBlur(dy, (0, 0), sigma)
 
-        # [Step 4] Label-specific (Mask) deformation
+        # [Step 4️⃣] Label-specific (Mask) deformation
         x, y = np.meshgrid(np.arange(shape[1]), np.arange(shape[0]))
         map_x = np.clip(x + dx, 0, shape[1] - 1).astype(np.float32)
         map_y = np.clip(y + dy, 0, shape[0] - 1).astype(np.float32)
