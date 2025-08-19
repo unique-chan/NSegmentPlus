@@ -19,6 +19,7 @@
 - Official implementation of our proposed approach (**_NSegment_+**)
 
 ### Announcement:
+- Aug. 2025: Our preprint is now available at https://arxiv.org/pdf/2508.10383.
 - Aug. 2025: We have released the official code of our proposed approach!
 - Jul. 2025: Our previous pilot work, **_NSegment_**, is available at [here](https://github.com/unique-chan/NSegment)!
 
