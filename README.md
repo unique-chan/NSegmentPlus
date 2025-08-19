@@ -145,7 +145,21 @@ class NoisySegmentPlus:
     ~~~
 
 ### Citation:
-Under construction
+- For Latex:
+  ~~~ME
+  @article{kim2025unlocking,
+    title={Unlocking Robust Semantic Segmentation Performance via Label-only Elastic Deformations against Implicit Label Noise},
+    author={Kim, Yechan and Yoon, Dongho and Lee, Younkwan and Fatima, Unse and Kim, Hong Kook and Lee, Songjae and Park, Sanga and Park, Jeong Ho and Kang, Seonjong and Jeon, Moongu},
+    journal={arXiv preprint arXiv:2508.10383},
+    year={2025}
+  }
+  ~~~
+
+
+- For Word (MLA Style):
+  ~~~ME
+  Kim, Yechan, et al. "Unlocking Robust Semantic Segmentation Performance via Label-only Elastic Deformations against Implicit Label Noise." arXiv preprint arXiv:2508.10383 (2025).
+  ~~~
 
 ### Contribution:
 If you find any bugs or have opinions for further improvements, please feel free to create a pull request or contact me (yechankim@gm.gist.ac.kr). All contributions are welcome.
